@@ -1,10 +1,3 @@
-/*
- * list_db.c
- *
- *  Created on: Apr. 15, 2020
- *      Author: takis
- */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -19,6 +12,9 @@
  */
 stuLL_t* createNodeLinkedList(void)
 {
+	struct stuLL_t* new=(struct stuLL_t*) malloc (sizeof stuLL_t)); //allocates space for a new node of data type stuLL_t
+	new->pNext = NULL; // set the next address of new to NULL
+	return new; // returns the node after creating it
 	// PROBLEM #1: complete the code for this function
 	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
 }
