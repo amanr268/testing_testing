@@ -59,13 +59,11 @@ int comparo_grade(const void *pA, const void *pB)
 	float *g_B = B.data.grade;
 
 	if (g_A > g_B)
-	{
-		compare=g_A;
-		g_A=g_B;
-		g_B=compare;
-	}
-
-	return (A,B);
+	{return 1;}
+	else if (g_A == g_B)
+		{return 0;}
+	else if(g_A < g_B)
+		{return -1;}
 }
 
 /*
@@ -107,8 +105,10 @@ stuDA_t* sortDynamicArray(stuDA_t *pHEAD, const sort_t sort_type,
 		break;
 	case gNamesort:
 		// fill the code here for Part a)
+		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_gName);
 	case gradesort:
 		// fill the code here for Part b)
+		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_grade);
 	}
 	return pHEAD;
 }

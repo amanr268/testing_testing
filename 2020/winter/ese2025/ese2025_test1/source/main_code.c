@@ -1,11 +1,3 @@
-/*
- * main_code.c
- *
- *  Created on: Apr. 15, 2020
- *      Author: takis
- *      Author: you too!
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -1,16 +1,5 @@
 #ifndef MY_INCLUDES_LIST_DB_H_
 #define MY_INCLUDES_LIST_DB_H_
-
-/*
- * list_db.h
- *
- *  Created on: Apr. 15, 2020
- *      Author: takis
- */
-
-/*
- * IMPORTANT DEFINITIONS
- */
 #define	STRSIZE 30
 #define	EOFSTR	"NULL_NAME"
 
