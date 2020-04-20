@@ -1,10 +1,3 @@
-/*
- * dyn_arr.c
- *
- *  Created on: Apr. 15, 2020
- *      Author: takis
- */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -24,6 +17,14 @@ int comparo_fName(const void *pA, const void *pB)
 
 	// PROBLEM #3: complete the code for this function
 	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
+		stuDA_t student_A = *((stuDA_t*) pA);
+		stuDA_t student_B = *((stuDA_t*) pB);
+
+		// get student given names
+		char *fName_A = student_A.data.fName;
+		char *fName_B = student_B.data.fName;
+
+		return strcmp(gName_A, gName_B);
 }
 
 /*
