@@ -1,5 +1,13 @@
+/*
+ * dyn_arr.h
+ *
+ *  Created on: Apr. 15, 2020
+ *      Author: takis
+ */
+
 #ifndef MY_INCLUDES_DYN_ARR_H_
 #define MY_INCLUDES_DYN_ARR_H_
+
 #include <stdlib.h>
 #include "list_db.h"
 
