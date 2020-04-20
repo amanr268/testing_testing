@@ -52,6 +52,20 @@ int comparo_grade(const void *pA, const void *pB)
 {
 	// PROBLEM #4: complete the code for this function
 	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
+	float compare;
+	stuDA_t A = *((stuDA_t*) pA);
+	stuDA_t B = *((stuDA_t*) pB);
+	float *g_A = A.data.grade;
+	float *g_B = B.data.grade;
+
+	if (g_A > g_B)
+	{
+		compare=g_A;
+		g_A=g_B;
+		g_B=compare;
+	}
+
+	return (A,B);
 }
 
 /*
